@@ -7,7 +7,6 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/signup.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -40,7 +39,7 @@
             <li><a href="#">Honeymoon</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" onclick="document.getElementById('form_s').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
@@ -298,7 +297,7 @@
 
     <!-- modal signup -->
     <div id="form_s" class="modal">
-      <span onclick="document.getElementById('fom').style.display='none'" class="close" title="Close Modal">×</span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
       <form class="modal-content animate" action="/action_page.php">
         <div class="container">
           <label><b>Email</b></label>
@@ -313,25 +312,13 @@
           <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
           <div class="clearfix">
-            <button type="button" onclick="document.getElementById('form_s').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <button type="submit" class="signupbtn">Sign Up</button>
           </div>
         </div>
       </form>
     </div>
 
-
-    <script>
-// Get the modal
-var modal = document.getElementById('form_s');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 </body>
 </html>
 
